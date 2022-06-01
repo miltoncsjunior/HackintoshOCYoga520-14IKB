@@ -62,8 +62,13 @@
 	<string>Copyright © 2020 钟先耀. All rights reserved.</string>
 	<key>OSBundleLibraries</key>
 	<dict>
+<<<<<<< HEAD
 		<key>com.apple.iokit.IO80211Family</key>
 		<string>1200.12.2b1</string>
+=======
+		<key>com.apple.iokit.IO80211FamilyLegacy</key>
+		<string>600.0</string>
+>>>>>>> 1163ab8c5623dfe778cb112be6ce9ee4d594eb3b
 		<key>com.apple.iokit.IONetworkingFamily</key>
 		<string>3.2</string>
 		<key>com.apple.iokit.IOPCIFamily</key>
