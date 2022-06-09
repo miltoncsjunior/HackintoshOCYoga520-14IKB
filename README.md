@@ -1,7 +1,7 @@
 # Lenovo IdeaPad 520-14IKB (80YM) Opencore Hackintosh 
 [![Code](https://img.shields.io/badge/download-release-blue.svg)](https://github.com/miltoncsjunior/HackintoshOCYoga520-14IKB.git)
 
-A guide for installing macOS Big Sur on Lenovo IdeaPad 520-14IKB using OpenCore UEFI.
+A guide for installing macOS Big Sur on Lenovo IdeaPad 520-14IKB using OpenCore 0.8.1 UEFI.
 ![](Images/Laptop.png)
 
 
