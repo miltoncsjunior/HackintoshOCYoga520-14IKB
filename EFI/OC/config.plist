@@ -64,22 +64,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Add counterfeit BUS0 and BLC0 devices</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-SBUS.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Add Direct Memory Access Control (DMAC) device</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-DMAC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Add counterfeit Embedded Controller (EC) device</string>
 				<key>Enabled</key>
 				<true/>
@@ -96,6 +80,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Add counterfeit BUS0 and BLC0 devices</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-SBUS.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Add MCHC device</string>
 				<key>Enabled</key>
 				<true/>
@@ -104,27 +96,27 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Add MEM2 device</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-MEM2.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Add Power Management Capabilities Register (PMCR) device</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PMCR.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Keyboard complete patches, pair with VoodooPS2Keyboard kext (inside VoodooPS2Controller kext)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-PS2MAP.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Add Direct Memory Access Control (DMAC) device</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-DMAC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Add MEM2 device</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-MEM2.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -362,15 +354,6 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
-				<key>AAPL,current-available</key>
-				<data>NAg=</data>
-				<key>AAPL,current-extra</key>
-				<data>gAw=</data>
-				<key>AAPL,current-in-sleep</key>
-				<data>6AM=</data>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x14,0x2)</key>
-			<dict>
 				<key>acpi-wake-type</key>
 				<data>AQ==</data>
 			</dict>
@@ -383,6 +366,8 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>AAAbWQ==</data>
+				<key>device-id</key>
+				<data>FlkAAA==</data>
 				<key>enable-hdmi20</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-fbmem</key>
@@ -391,8 +376,6 @@
 				<data>AQAAAA==</data>
 				<key>framebuffer-stolenmem</key>
 				<data>AAAwAQ==</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1128,7 +1111,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>alcid=17 gfxrst=1 -igfxtypec igfxonln=1 -igfxbls -igfxdbeo -cdfon</string>
+				<string>alcid=17 -igfxtypec igfxonln=1 -cdfon</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1162,7 +1145,7 @@
 		<key>Generic</key>
 		<dict>
 			<key>AdviseFeatures</key>
-			<false/>
+			<true/>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
