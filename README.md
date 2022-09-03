@@ -13,7 +13,7 @@ I'm not an expert in hackintoshing, this is my first Hackintosh, I managed to ge
 - <b>GPU</b>: Intel HD 620 Graphics 
 - <b>Storage</b>: 500Gb NVME Kingston (Upgraded)
 - <b>RAM</b>: 8 GB DDR4 2133MHz
-- <b>Screen</b>: 13.9-inch Full HD (1920 x 1080)
+- <b>Screen</b>: 13.9-inch Full HD (1366 x 768)
 - <b>Trackpad</b>: PS2 (I2C)
 - <b>Wi-Fi</b>: Intel AC3150 Dual Band
 - <b>Ports</b>: 1 x USB-C, 2 x USB 3.0, USB 2.0 SD Card Reader, HDMI Display Port
