@@ -96,7 +96,7 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>Keyboard complete patches, pair with VoodooPS2Keyboard kext (inside VoodooPS2Controller kext)</string>
+                    <string>Keyboard complete patches, pair with VoodooPS2Controller.kext and VoodooPS2Keyboard.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -481,7 +481,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.7.4 | Audio patches, pair with Lilu kext</string>
+                    <string>V1.7.5 | Audio patches, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -587,24 +587,6 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>SMCLightSensor.kext</string>
-                    <key>Comment</key>
-                    <string>V1.3.0 | Light Sensor patches, pair with VirtualSMC kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/SMCLightSensor</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
                     <string>RealtekCardReaderFriend.kext</string>
                     <key>Comment</key>
                     <string>V1.0.3 | Enable system recognition for Realtek card reader as a native one, pair with Lilu kext</string>
@@ -659,13 +641,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
+                    <string>VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext</string>
                     <key>Comment</key>
-                    <string>V1 | Enable HID trackpad using GPIO mode</string>
+                    <string>V1.1.3 | Enable HID trackpad using GPIO mode</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooI2CServices</string>
+                    <string>Contents/MacOS/VoodooInput</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -677,13 +659,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext</string>
+                    <string>VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.3 | Enable HID trackpad using GPIO mode</string>
+                    <string>V1 | Enable HID trackpad using GPIO mode</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooInput</string>
+                    <string>Contents/MacOS/VoodooI2CServices</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -733,7 +715,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.9 | PS2 Keyboard</string>
+                    <string>V2.3.0 | Enable PS2 Keyboard</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -751,7 +733,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.9 | PS2 Keyboard</string>
+                    <string>V2.3.0 | Enable PS2 Keyboard</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -805,7 +787,7 @@
                     <key>BundlePath</key>
                     <string>IntelBluetoothFirmware.kext</string>
                     <key>Comment</key>
-                    <string>V2.1.0 | Wi-fi and bluetooth, pair with AirportItlwm kext</string>
+                    <string>V2.2.0 | Wi-fi and bluetooth, pair with AirportItlwm kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -888,28 +870,7 @@
                 <string></string>
             </dict>
             <key>Force</key>
-            <array>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>System/Library/Extensions/IO80211Family.kext</string>
-                    <key>Comment</key>
-                    <string>Necessary for wifi compatibility</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IO80211Family</string>
-                    <key>Identifier</key>
-                    <string>com.apple.iokit.IO80211Family</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-            </array>
+            <array/>
             <key>Patch</key>
             <array>
                 <dict>
@@ -1269,7 +1230,7 @@
                 <key>MinimumAudibleGain</key>
                 <integer>-128</integer>
                 <key>PlayChime</key>
-                <string>Enabled</string>
+                <string>Disabled</string>
                 <key>ResetTrafficClass</key>
                 <false/>
                 <key>SetupDelay</key>
@@ -1279,18 +1240,6 @@
             <true/>
             <key>Drivers</key>
             <array>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>LoadEarly</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>ResetNvramEntry.efi</string>
-                </dict>
                 <dict>
                     <key>Arguments</key>
                     <string></string>
@@ -1326,6 +1275,18 @@
                     <false/>
                     <key>Path</key>
                     <string>OpenRuntime.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>ResetNvramEntry.efi</string>
                 </dict>
                 <dict>
                     <key>Arguments</key>

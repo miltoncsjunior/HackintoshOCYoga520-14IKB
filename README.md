@@ -1,7 +1,7 @@
 # Lenovo IdeaPad 520-14IKB (80YM) Opencore Hackintosh 
 [![Code](https://img.shields.io/badge/download-release-blue.svg)](https://github.com/miltoncsjunior/HackintoshOCYoga520-14IKB.git)
 
-A guide for installing macOS Big Sur on Lenovo IdeaPad 520-14IKB using OpenCore 0.8.1 UEFI.
+A guide for installing macOS Monterey 12.5.1 on Lenovo IdeaPad 520-14IKB using OpenCore 0.8.4 UEFI.
 ![](Images/Laptop.png)
 
 
@@ -38,7 +38,7 @@ This laptop is a reasonably spec laptop, I use it for development but I don't re
 - Screen Brightness with Hotkeys
 - Fn keys and Hotkeys lock
 - FileVault Disk Encryption
-- Tested only macOS Big Sur 11
+- Tested on macOS Big Sur and Monterey
 
 ## What's Not Working?
 - Apple Pay with TouchID, to confirm any purchases you need to type your password instead of using TouchID, more information [here](https://discussions.apple.com/thread/7808558)
@@ -50,7 +50,7 @@ This laptop is a reasonably spec laptop, I use it for development but I don't re
 
 ## Requirement 
 - 16GB USB drive 
-- macOS Big Sur image downloaded from the Appstore 
+- macOS Monterey image downloaded from the Appstore 
 
 ## BIOS Configuration
 Before doing anything, make sure to update your BIOS to the latest version
@@ -59,16 +59,17 @@ Before doing anything, make sure to update your BIOS to the latest version
 <b>Boot</b>: `Boot Mode` to `UEFI`,`Fast Boot` to `Enabled`, `USB Boot` to `Enabled`.
 
 ## Installation
-After downloading macOS Big Sur from the AppStore (do not use a distro image like Hackintosh Zone otherwise it's gonna break your system and you won't get any support using it), format your USB drive as "Mac OS Extended (Journaled)", then open Terminal and type: `sudo /Applications/Install\ macOS\ Big\ Sur\.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume`, and remember, `MyVolume` is for the name of your USB drive, you can change it if you would, mount the EFI partition in your USB, Copy-and-paste the folder `EFI` from this release's repository, unzip `SMBIOS Generator`, open Terminal and drag-and-drop macserial to the terminal window, then type `--generate-all`  and press<kbd> enter</kbd>, then copy MacBookPro14,1 SMBIOS (which is the closest one to this laptop's hardware) and change it, copy to config.plist, update your kexts and OpenCore (if a new update is available), reboot your laptop and press `F12` to enter `BIOS Menu`, choose your USB installer and select boot from the USB that shown, it may take some time to boot, after is done, you should see `macOS Utilities`, choose `Disk Utility` and erase the drive you want to install macOS on it, click on `Erase` and type the name that you want, like: "Macintosh HD", choose the format as `APFS` and `Scheme` as `GUID Partition Map` and click `Erase`, after it's done, close the window and go back to `macOS Utilities` and choose `Install macOS`, click `Agree` to accept the license agreement, the installation should starts now, your laptop should restarts several times, after it's done, login to your AppleID (for more specific guide please go [here](https://dortania.github.io/oc-laptop-guide/)), after setting up your laptop, unzip the folder.
+For a complete guide on how to create an installation disk on USB stick follow this [link](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install.html)
+After create disk, mount the EFI partition in your USB, Copy-and-paste the folder `EFI` from this release's repository and generate MacBookPro14,2 SMBIOS (which is the closest one to this laptop's hardware) and change it, copy to config.plist, reboot your laptop and press `F12` to enter `BIOS Menu`, choose your USB installer and select boot from the USB that shown, it may take some time to boot, after is done, you should see `macOS Utilities`, choose `Disk Utility` and erase the drive you want to install macOS on it, click on `Erase` and type the name that you want, like: "Mac OS", choose the format as `APFS` and `Scheme` as `GUID Partition Map` and click `Erase`, after it's done, close the window and go back to `macOS Utilities` and choose `Install macOS`, click `Agree` to accept the license agreement, the installation should starts now, your laptop should restarts several times, after it's done, login to your AppleID (for more specific guide please go [here](https://dortania.github.io/oc-laptop-guide/)), after setting up your laptop, unzip the folder.
 If you have problems with sleep please go [here](https://dortania.github.io/oc-laptop-guide/battery-power-management/correcting-sleep-problems.html).
 Restart, and you're ready to go!
 
 ## Extras
-- After you finish the installation you'll notice that your iMessage and other Apple services aren't working properly, to fix that issue you have to add `ROM`, `MLB` and a proper SMBIOS (which is MacBookPro14,1 for this device) in your `config.plist`, for more information follow this guide from [here](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#fixing-imessage-and-other-services-with-opencore).
+- After you finish the installation you'll notice that your iMessage and other Apple services aren't working properly, to fix that issue you have to add `ROM`, `MLB` and a proper SMBIOS (which is MacBookPro14,2 for this device) in your `config.plist`, for more information follow this guide from [here](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#fixing-imessage-and-other-services-with-opencore).
 - If you don't like the name of your laptop that shown in "About This Mac", you can change it! Press Shift+Cmd+G <kbd>⇧⌘G</kbd> and copy-and-paste this path: `/Users/Username/Library/Preferences/com.apple.SystemProfiler.plist`, and remember, the word `Username` Is for your username, now download your favorite plist editor (mine is "PilstEdit Pro"), then you can change to `Lenovo IdeaPad 520-14IKB (80YM)` or any name you want.
 ![](Images/Edit.png)
 ![](Images/About_This_Mac.png)
-- Fn keys don't work usually on most Hackintoshes, luckily, `YogaSMC` can fix this! Not just enabling Fn keys and their abilities, it enables Lenovo features like `Conversation Mode` to stop charging the battery at %60 to increase it's age, ture Cycle Count reading because macOS ones can be wrong, `Fn Mode` etc, to get those features, `YogaSMC` is included inside the EFIs, all you have to do is install `YogaSMCNC` app and `YogaSMCPane` which are included in the release.
+- Fn keys don't work usually on most Hackintoshes, luckily, `YogaSMC` can fix this! Not just enabling Fn keys and their abilities, it enables Lenovo features like `Conversation Mode` to stop charging the battery at %60 to increase it's age, ture Cycle Count reading because macOS ones can be wrong, `Fn Mode` etc, to get those features, `YogaSMC` is included inside the EFIs, all you have to do is install `YogaSMCNC` app and `YogaSMCPane` from this [link](https://github.com/zhen-zen/YogaSMC/releases.
 - The keyboard experience on this laptop is a bit different than a real mac, in order to make the closest to a real mac we need to make a couple of changes, luckily, in the latest `VoodooPS2` release, it automatically swaps <kbd>Cmd</kbd> to <kbd>Win</kbd>, if you want to reverse it, them in `System Preferences` as shown in the photo.
 ![](Images/Keyboard.png)
 
