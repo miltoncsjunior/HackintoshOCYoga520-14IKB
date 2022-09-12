@@ -587,6 +587,24 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>SMCLightSensor.kext</string>
+                    <key>Comment</key>
+                    <string>V1.3.0 | Light sensor patches, pair with VirtualSMC kext</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/SMCLightSensor</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>RealtekCardReaderFriend.kext</string>
                     <key>Comment</key>
                     <string>V1.0.3 | Enable system recognition for Realtek card reader as a native one, pair with Lilu kext</string>
@@ -769,7 +787,7 @@
                     <key>BundlePath</key>
                     <string>AirportItlwm.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | Wi-fi and bluetooth, pair with AirportItlwm kext</string>
+                    <string>V2.2.0 | Wi-fi and bluetooth</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -785,9 +803,27 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>IntelBTPatcher.kext</string>
+                    <key>Comment</key>
+                    <string>V2.2.0 | Bluetooth patch, pair with Lilu kext</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/IntelBTPatcher</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>IntelBluetoothFirmware.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | Wi-fi and bluetooth, pair with AirportItlwm kext</string>
+                    <string>V2.2.0 | Bluetooth, pair with AirportItlwm kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -805,7 +841,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.3 | Wi-fi and bluetooth, pair with AirportItlwm kext</string>
+                    <string>V2.6.3 | Bluetooth, pair with AirportItlwm kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1349,7 +1385,7 @@
                 <key>TextRenderer</key>
                 <string>BuiltinGraphics</string>
                 <key>UIScale</key>
-                <integer>-1</integer>
+                <integer>1</integer>
                 <key>UgaPassThrough</key>
                 <false/>
             </dict>
