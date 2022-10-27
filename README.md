@@ -1,7 +1,7 @@
 # Lenovo IdeaPad 520-14IKB (80YM) Opencore Hackintosh 
 [![Code](https://img.shields.io/badge/download-release-blue.svg)](https://github.com/miltoncsjunior/HackintoshOCYoga520-14IKB.git)
 
-A guide for installing macOS Monterey 12.6 on Lenovo IdeaPad 520-14IKB using OpenCore 0.8.4 UEFI.
+A guide for installing macOS Ventura 13.0 on Lenovo IdeaPad 520-14IKB using OpenCore 0.8.5 UEFI.
 ![](Images/Laptop.png)
 
 
@@ -46,11 +46,11 @@ This laptop is a reasonably spec laptop, I use it for development but I don't re
 ## Bugs
 - DRM support (iTunes Movies, Apple TV+, Amazon Prime and Netflix, and others) could be fixed in the future, more information [here](https://github.com/acidanthera/bugtracker/issues/586) and [here](https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/#DRM).
 - Not tested microphone using Google Chrome or Firefox, see https://github.com/Ab2774/Lenovo-IdeaPad-320-14-IKB-Hackintosh/issues/3.
-- Screen light-up after wake require a second keyboard click with using baterry, this can be fixed but it will break sleep causing an instant wake.
+- Screen light-up after wake require a second keyboard click with using batery, this can be fixed but it will break sleep causing an instant wake.
 
 ## Requirement 
 - 16GB USB drive 
-- macOS Monterey image downloaded from the Appstore 
+- macOS Ventura image downloaded from the Appstore 
 
 ## BIOS Configuration
 Before doing anything, make sure to update your BIOS to the latest version
