@@ -1,7 +1,7 @@
 # Lenovo IdeaPad 520-14IKB (80YM) Opencore Hackintosh 
 [![Code](https://img.shields.io/badge/download-release-blue.svg)](https://github.com/miltoncsjunior/HackintoshOCYoga520-14IKB.git)
 
-A guide for installing macOS Ventura 13.0 on Lenovo IdeaPad 520-14IKB using OpenCore 0.8.5 UEFI.
+A guide for installing macOS Ventura 13.1 on Lenovo IdeaPad 520-14IKB using OpenCore 0.8.7 UEFI.
 ![](Images/Laptop.png)
 
 
@@ -31,14 +31,14 @@ This laptop is a reasonably spec laptop, I use it for development but I don't re
 - USB Dongle Ethernet
 - Audio (including headphones jack)
 - Wi-Fi & Bluetooth (including Apple services)
-- Internal webcam with Facetime
+- Internal webcam with FaceTime
 - Trackpad with GPIO mode (including gestures)
 - Sleep (hibernation, lid sleep, and lid wake)
 - Native macOS Hibernation
 - Screen Brightness with Hotkeys
 - Fn keys and Hotkeys lock
 - FileVault Disk Encryption
-- Tested on macOS Big Sur and Monterey
+- Tested on Monterey (require change AirportItlwm.kext) and Ventura
 
 ## What's Not Working?
 - Apple Pay with TouchID, to confirm any purchases you need to type your password instead of using TouchID, more information [here](https://discussions.apple.com/thread/7808558)
@@ -46,7 +46,7 @@ This laptop is a reasonably spec laptop, I use it for development but I don't re
 ## Bugs
 - DRM support (iTunes Movies, Apple TV+, Amazon Prime and Netflix, and others) could be fixed in the future, more information [here](https://github.com/acidanthera/bugtracker/issues/586) and [here](https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/#DRM).
 - Not tested microphone using Google Chrome or Firefox, see https://github.com/Ab2774/Lenovo-IdeaPad-320-14-IKB-Hackintosh/issues/3.
-- Screen light-up after wake require a second keyboard click with using batery, this can be fixed but it will break sleep causing an instant wake.
+- Screen light-up after wake require a second keyboard click with using battery, this can be fixed but it will break sleep causing an instant wake.
 
 ## Requirement 
 - 16GB USB drive 
@@ -64,7 +64,7 @@ After create disk, mount the EFI partition in your USB, Copy-and-paste the folde
 If you have problems with sleep please go [here](https://dortania.github.io/oc-laptop-guide/battery-power-management/correcting-sleep-problems.html).
 Restart, and you're ready to go!
 
-## Extras
+## Extras (above Ventura)
 - After you finish the installation you'll notice that your iMessage and other Apple services aren't working properly, to fix that issue you have to add `ROM`, `MLB` and a proper SMBIOS (which is MacBookPro14,2 for this device) in your `config.plist`, for more information follow this guide from [here](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#fixing-imessage-and-other-services-with-opencore).
 - If you don't like the name of your laptop that shown in "About This Mac", you can change it! Press Shift+Cmd+G <kbd>⇧⌘G</kbd> and copy-and-paste this path: `/Users/Username/Library/Preferences/com.apple.SystemProfiler.plist`, and remember, the word `Username` Is for your username, now download your favorite plist editor (mine is "PilstEdit Pro"), then you can change to `Lenovo IdeaPad 520-14IKB (80YM)` or any name you want.
 ![](Images/Edit.png)
