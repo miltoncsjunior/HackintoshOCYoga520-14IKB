@@ -41,11 +41,11 @@
 				<key>kUSBSleepPortCurrentLimit</key>
 				<integer>2100</integer>
 				<key>kUSBSleepPowerSupply</key>
-				<integer>2600</integer>
+				<integer>5100</integer>
 				<key>kUSBWakePortCurrentLimit</key>
 				<integer>2100</integer>
 				<key>kUSBWakePowerSupply</key>
-				<integer>3200</integer>
+				<integer>5100</integer>
 				<key>port-count</key>
 				<data>
 				DwAAAA==
@@ -116,17 +116,6 @@
 						<key>port</key>
 						<data>
 						BwAAAA==
-						</data>
-					</dict>
-					<key>SS01</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>9</integer>
-						<key>name</key>
-						<string>SS01</string>
-						<key>port</key>
-						<data>
-						DQAAAA==
 						</data>
 					</dict>
 					<key>SS02</key>
