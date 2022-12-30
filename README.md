@@ -86,6 +86,4 @@ Restart, and you're ready to go!
 - [daliansky](https://github.com/daliansky) for some ACPI patches.
 - [Moh_Ameen](https://github.com/ameenjuz) for some ACPI patches.
 - [blackosx](https://github.com/blackosx/OpenCanopyIcons) for OpenCanopyIcons theme.
-- [al3xtjames](https://github.com/al3xtjames) for clover-theme-oss theme.
-- [ImmersiveX](https://github.com/ImmersiveX) for clover-theme-minimal-dark theme.
 - And anyone else that helped to develop and improve hackintoshing.
