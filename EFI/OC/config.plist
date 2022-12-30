@@ -112,7 +112,7 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>Add counterfeit Embedded Controller (EC) device, pair with YogaSMC.kext</string>
+                    <string>Add counterfeit Embedded Controller (EC) device, pair with YogaSMC kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -120,7 +120,7 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>Add counterfeit Embedded Controller (EC) device, pair with YogaSMC.kext</string>
+                    <string>Add counterfeit Embedded Controller (EC) device, pair with YogaSMC kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -128,7 +128,7 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>Add counterfeit Embedded Controller (EC) device, pair with YogaSMC.kext</string>
+                    <string>Add counterfeit Embedded Controller (EC) device, pair with YogaSMC kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -136,7 +136,7 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>Add counterfeit Embedded Controller (EC) device, pair with YogaSMC.kext</string>
+                    <string>Add counterfeit Embedded Controller (EC) device, pair with YogaSMC kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -144,7 +144,7 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>Keyboard complete patches, pair with VoodooPS2Controller.kext and VoodooPS2Keyboard.kext</string>
+                    <string>Keyboard complete patches, pair with VoodooPS2Controller and VoodooPS2Keyboard kexts</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -458,7 +458,7 @@
                     <key>BundlePath</key>
                     <string>YogaSMC.kext</string>
                     <key>Comment</key>
-                    <string>V1.5.1 | Lenovo SMC keys, pair with VirtualSMC kext</string>
+                    <string>V1.5.1 | Lenovo SMC keys,  pair with VirtualSMC kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -476,7 +476,7 @@
                     <key>BundlePath</key>
                     <string>ECEnabler.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.3 | Allow macOS to read any size of EC field, pair with Lilu kext</string>
+                    <string>V1.0.3 | Allow macOS to read any size of EC field,  pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -494,7 +494,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.1 | Graphics patches, pair with Lilu kext</string>
+                    <string>V1.6.1 | Graphics patches,  pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -512,7 +512,7 @@
                     <key>BundlePath</key>
                     <string>CryptexFixup.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.1 | Required in macOS Ventura pair with Lilu kext</string>
+                    <string>V1.0.1 | Required in macOS Ventura,  pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -530,7 +530,7 @@
                     <key>BundlePath</key>
                     <string>NVMeFix.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.0 | NVME patches, pair with Lilu kext</string>
+                    <string>V1.1.0 | NVME patches,  pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -548,7 +548,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.7.5 | Audio patches, pair with Lilu kext</string>
+                    <string>V1.7.5 | Audio patches,  pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -566,7 +566,7 @@
                     <key>BundlePath</key>
                     <string>CpuTscSync.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.9 | Disable xcpm_urgency, pair with Lilu kext</string>
+                    <string>V1.0.9 | Disable xcpm_urgency,  pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -620,7 +620,7 @@
                     <key>BundlePath</key>
                     <string>SMCBatteryManager.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.0 | Battery patches, pair with VirtualSMC kext</string>
+                    <string>V1.3.0 | Battery patches,  pair with VirtualSMC kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -636,9 +636,27 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>SMCSuperIO.kext</string>
+                    <key>Comment</key>
+                    <string>V1.3.0 | Fan patches,  pair with VirtualSMC kext</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/SMCSuperIO</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>SMCProcessor.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.0 | Processor patches, pair with VirtualSMC kext</string>
+                    <string>V1.3.0 | Processor patches,  pair with VirtualSMC kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -656,7 +674,7 @@
                     <key>BundlePath</key>
                     <string>RealtekCardReaderFriend.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.4 | Enable system recognition for Realtek card reader as a native one, pair with Lilu kext</string>
+                    <string>V1.0.4 | Enable system recognition for Realtek card reader as a native one,  pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -852,9 +870,27 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>IntelBTPatcher.kext</string>
+                    <key>Comment</key>
+                    <string>V2.2.0 | Bluetooth patch,  pair with Lilu kext</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/IntelBTPatcher</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>IntelBluetoothFirmware.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | Bluetooth, pair with AirportItlwm kext</string>
+                    <string>V2.2.0 | Bluetooth,  pair with AirportItlwm kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -872,29 +908,11 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.4 | Bluetooth, pair with AirportItlwm kext</string>
+                    <string>V2.6.4 | Bluetooth,  pair with AirportItlwm kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/BlueToolFixup</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>IntelBTPatcher.kext</string>
-                    <key>Comment</key>
-                    <string>V2.2.0 | Bluetooth patch, pair with Lilu kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IntelBTPatcher</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
