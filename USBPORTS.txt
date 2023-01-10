@@ -1,0 +1,21 @@
+##2.0 - 0
+2. AppleUSB20XHCIPort | AppleUSB20XHCIPort |  2 (02000000) | 14200000 | Type -1
+3. AppleUSB20XHCIPort | AppleUSB20XHCIPort |  3 (03000000) | 14300000 | Type -1
+
+##3.0 - 3
+14. AppleUSB30XHCIPort | AppleUSB30XHCIPort | 14 (0e000000) | 14e00000 | Type -1
+15. AppleUSB30XHCIPort | AppleUSB30XHCIPort | 15 (0f000000) | 14f00000 | Type -1
+
+##INTERNAL - 255
+5. AppleUSB20XHCIPort | AppleUSB20XHCIPort |  5 (05000000) | 14500000 | Type -1 - EasyCamera
+7. AppleUSB20XHCIPort | AppleUSB20XHCIPort |  7 (07000000) | 14700000 | Type -1 - Bluetooth USB Host Controller
+
+##C - 9
+1. AppleUSB20XHCIPort | AppleUSB20XHCIPort |  1 (01000000) | 14100000 | Type -1
+
+T:2,3:0
+T:14,15:3
+T:5,7:255
+T:1:9
+
+2,3,14,15,5,7,1
