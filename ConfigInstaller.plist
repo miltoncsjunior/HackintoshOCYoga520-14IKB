@@ -393,8 +393,6 @@
                     <data>LAEAAA==</data>
                     <key>device-id</key>
                     <data>FlkAAA==</data>
-                    <key>disable-telemetry-load</key>
-                    <data>AQAAAA==</data>
                     <key>enable-backlight-smoother</key>
                     <data>AQAAAA==</data>
                     <key>enable-hdmi20</key>
@@ -496,7 +494,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.3 | Graphics patches, pair with Lilu kext</string>
+                    <string>V1.6.4 | Graphics patches, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -550,7 +548,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.7.8 | Audio patches, pair with Lilu kext</string>
+                    <string>V1.7.9 | Audio patches, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1637,6 +1635,8 @@
                 <true/>
                 <key>ResizeGpuBars</key>
                 <integer>-1</integer>
+                <key>ResizeUsePciRbIo</key>
+                <false/>
                 <key>TscSyncTimeout</key>
                 <integer>0</integer>
                 <key>UnblockFsConnect</key>
