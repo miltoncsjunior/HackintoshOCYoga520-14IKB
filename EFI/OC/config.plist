@@ -376,6 +376,11 @@
         <dict>
             <key>Add</key>
             <dict>
+                <key>PciRoot(0x0)/Pci(0x14,0x0)</key>
+                <dict>
+                    <key>acpi-wake-type</key>
+                    <data>AQ==</data>
+                </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
                 <dict>
                     <key>layout-id</key>
@@ -584,7 +589,7 @@
                     <key>BundlePath</key>
                     <string>HibernationFixup.kext</string>
                     <key>Comment</key>
-                    <string>V1.4.7 | Fix hibernation Syncing RTC variables and NVRAM, pair with Lilu kext</string>
+                    <string>V1.4.8 | Fix hibernation Syncing RTC variables and NVRAM, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -602,7 +607,7 @@
                     <key>BundlePath</key>
                     <string>FeatureUnlock.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.2 | Unlock features in Ventura fix Air Play, pair with Lilu kext</string>
+                    <string>V1.1.3 | Unlock features in Ventura fix Air Play, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -818,7 +823,7 @@
                     <key>BundlePath</key>
                     <string>VoodooI2C.kext</string>
                     <key>Comment</key>
-                    <string>V2.7.1 | Enable HID trackpad using GPIO mode</string>
+                    <string>V2.8 | Enable HID trackpad using GPIO mode</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1283,7 +1288,7 @@
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
-                <integer>0</integer>
+                <integer>1541</integer>
                 <key>ROM</key>
                 <data>LNeW2Xbu</data>
                 <key>SpoofVendor</key>
@@ -1353,7 +1358,7 @@
                 <key>PlatformFeature</key>
                 <integer>0</integer>
                 <key>ProcessorType</key>
-                <integer>0</integer>
+                <integer>1541</integer>
                 <key>SmcVersion</key>
                 <data></data>
                 <key>SystemFamily</key>
