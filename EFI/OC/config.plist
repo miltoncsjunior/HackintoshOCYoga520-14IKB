@@ -120,30 +120,6 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>Add counterfeit Embedded Controller (EC) device, pair with YogaSMC kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-RCSM.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string>Add counterfeit Embedded Controller (EC) device, pair with YogaSMC kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-THINK.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string>Add counterfeit Embedded Controller (EC) device, pair with YogaSMC kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-YVPC.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
                     <string>Keyboard complete patches, pair with VoodooPS2Controller and VoodooPS2Keyboard kexts</string>
                     <key>Enabled</key>
                     <true/>
@@ -311,7 +287,7 @@
                 <key>FadtEnableReset</key>
                 <false/>
                 <key>NormalizeHeaders</key>
-                <false/>
+                <true/>
                 <key>RebaseRegions</key>
                 <false/>
                 <key>ResetHwSig</key>
@@ -355,7 +331,7 @@
                 <key>ProtectSecureBoot</key>
                 <false/>
                 <key>ProtectUefiServices</key>
-                <false/>
+                <true/>
                 <key>ProvideCustomSlide</key>
                 <false/>
                 <key>ProvideMaxSlide</key>
@@ -427,7 +403,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.3 | Patch engine</string>
+                    <string>V1.6.4 | Patch engine</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -445,7 +421,7 @@
                     <key>BundlePath</key>
                     <string>VirtualSMC.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.0 | SMC emulator</string>
+                    <string>V1.3.1 | SMC emulator</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -553,7 +529,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.7.9 | Audio patches, pair with Lilu kext</string>
+                    <string>V1.8.0 | Audio patches, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -661,7 +637,7 @@
                     <key>BundlePath</key>
                     <string>SMCBatteryManager.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.0 | Battery patches, pair with VirtualSMC kext</string>
+                    <string>V1.3.1 | Battery patches, pair with VirtualSMC kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -679,11 +655,29 @@
                     <key>BundlePath</key>
                     <string>SMCProcessor.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.0 | Processor patches, pair with VirtualSMC kext</string>
+                    <string>V1.3.1 | Processor patches, pair with VirtualSMC kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/SMCProcessor</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>SMCSuperIO.kext</string>
+                    <key>Comment</key>
+                    <string>V1.3.1 | Fan patches, pair with VirtualSMC kext</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/SMCSuperIO</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -733,7 +727,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.3 | Enable PS2 Keyboard</string>
+                    <string>V2.3.4 | Enable PS2 Keyboard</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -751,7 +745,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.3 | Enable PS2 Keyboard</string>
+                    <string>V2.3.4 | Enable PS2 Keyboard</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -875,6 +869,24 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>IntelBTPatcher.kext</string>
+                    <key>Comment</key>
+                    <string>V2.2.0 | Bluetooth patch, pair with Lilu kext</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/IntelBTPatcher</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>AirportItlwm.kext</string>
                     <key>Comment</key>
                     <string>V2.2.0 | Enable Intel Wifi and Bluetooth</string>
@@ -918,42 +930,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/BlueToolFixup</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>IntelBTPatcher.kext</string>
-                    <key>Comment</key>
-                    <string>V2.2.0 | Bluetooth patch, pair with Lilu kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IntelBTPatcher</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>RD9700.kext</string>
-                    <key>Comment</key>
-                    <string>V2.4.0 | USB Ethernet</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/RD9700</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -1134,7 +1110,7 @@
                 <key>ApECID</key>
                 <integer>0</integer>
                 <key>AuthRestart</key>
-                <false/>
+                <true/>
                 <key>BlacklistAppleUpdate</key>
                 <true/>
                 <key>DmgLoading</key>
@@ -1288,7 +1264,7 @@
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
-                <integer>1541</integer>
+                <integer>0</integer>
                 <key>ROM</key>
                 <data>LNeW2Xbu</data>
                 <key>SpoofVendor</key>
@@ -1358,7 +1334,7 @@
                 <key>PlatformFeature</key>
                 <integer>0</integer>
                 <key>ProcessorType</key>
-                <integer>1541</integer>
+                <integer>0</integer>
                 <key>SmcVersion</key>
                 <data></data>
                 <key>SystemFamily</key>
@@ -1398,7 +1374,7 @@
                 <key>HideVerbose</key>
                 <true/>
                 <key>JumpstartHotPlug</key>
-                <false/>
+                <true/>
                 <key>MinDate</key>
                 <integer>0</integer>
                 <key>MinVersion</key>
@@ -1536,7 +1512,7 @@
                 <key>KeySwap</key>
                 <false/>
                 <key>PointerSupport</key>
-                <false/>
+                <true/>
                 <key>PointerSupportMode</key>
                 <string>ASUS</string>
                 <key>TimerResolution</key>
