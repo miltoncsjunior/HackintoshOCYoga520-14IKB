@@ -1,7 +1,7 @@
 # Lenovo Yoga 520-14IKB (80YM) Opencore Hackintosh 
 [![Code](https://img.shields.io/badge/download-release-blue.svg)](https://github.com/miltoncsjunior/HackintoshOCYoga520-14IKB.git)
 
-A guide for installing macOS Ventura 13.2.1 on Lenovo Yoga 520-14IKB using OpenCore 0.8.9 UEFI.
+A guide for installing macOS Ventura 13.3.1 on Lenovo Yoga 520-14IKB using OpenCore 0.9.2 UEFI.
 ![](Images/Laptop.png)
 
 

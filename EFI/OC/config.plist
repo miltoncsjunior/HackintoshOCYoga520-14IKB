@@ -407,7 +407,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.4 | Patch engine</string>
+                    <string>V1.6.5 | Patch engine</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -533,7 +533,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.8.0 | Audio patches, pair with Lilu kext</string>
+                    <string>V1.8.2 | Audio patches, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -587,7 +587,7 @@
                     <key>BundlePath</key>
                     <string>FeatureUnlock.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.3 | Unlock features in Ventura fix Air Play, pair with Lilu kext</string>
+                    <string>V1.1.4 | Unlock features in Ventura fix Air Play, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -623,7 +623,7 @@
                     <key>BundlePath</key>
                     <string>RestrictEvents.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.9 | Block unwanted processes</string>
+                    <string>V1.1.1 | Block unwanted processes</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -731,7 +731,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.4 | Enable PS2 Keyboard</string>
+                    <string>V2.3.5 | Enable PS2 Keyboard</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -749,7 +749,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.4 | Enable PS2 Keyboard</string>
+                    <string>V2.3.5 | Enable PS2 Keyboard</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -857,7 +857,7 @@
                     <key>BundlePath</key>
                     <string>BrightnessKeys.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.2 | Keyboard Brightness</string>
+                    <string>V1.0.3 | Keyboard Brightness</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -929,7 +929,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.4 | Bluetooth patch, pair with AirportItlwm kext</string>
+                    <string>V2.6.6 | Bluetooth patch, pair with AirportItlwm kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1008,6 +1008,8 @@
                 <false/>
                 <key>DisableIoMapper</key>
                 <true/>
+                <key>DisableIoMapperMapping</key>
+                <false/>
                 <key>DisableLinkeditJettison</key>
                 <true/>
                 <key>DisableRtcChecksum</key>
@@ -1189,8 +1191,10 @@
                 </dict>
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
-                    <key>boot-args</key>
+                    <key>#boot-args</key>
                     <string>-noht40 -cdfon -igfxtypec -ecebeta</string>
+                    <key>boot-args</key>
+                    <string>-cdfon -igfxtypec</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
@@ -1432,7 +1436,7 @@
                 <key>MinimumAudibleGain</key>
                 <integer>-55</integer>
                 <key>PlayChime</key>
-                <string>Auto</string>
+                <string>Disabled</string>
                 <key>ResetTrafficClass</key>
                 <false/>
                 <key>SetupDelay</key>
@@ -1532,10 +1536,14 @@
                 <false/>
                 <key>ForceResolution</key>
                 <false/>
+                <key>GopBurstMode</key>
+                <false/>
                 <key>GopPassThrough</key>
                 <string>Disabled</string>
                 <key>IgnoreTextInGraphics</key>
                 <false/>
+                <key>InitialMode</key>
+                <string>Auto</string>
                 <key>ProvideConsoleGop</key>
                 <true/>
                 <key>ReconnectGraphicsOnConnect</key>
