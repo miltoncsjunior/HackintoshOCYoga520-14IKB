@@ -8,14 +8,6 @@
             <array>
                 <dict>
                     <key>Comment</key>
-                    <string>Enable Power Management by injecting PluginType=1</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-PLUG.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
                     <string>Add PNLF device, pair with WhateverGreen and Lilu kexts</string>
                     <key>Enabled</key>
                     <true/>
@@ -365,7 +357,7 @@
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
                     <key>AAPL,ig-platform-id</key>
-                    <data>AAAWWQ==</data>
+                    <data>AAAbWQ==</data>
                     <key>backlight-smoother-interval</key>
                     <data>BwAAAA==</data>
                     <key>backlight-smoother-steps</key>
@@ -693,6 +685,78 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>AirportItlwm.kext</string>
+                    <key>Comment</key>
+                    <string>V2.2.0 | Enable Intel Wifi and Bluetooth</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AirportItlwm</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>IntelBluetoothFirmware.kext</string>
+                    <key>Comment</key>
+                    <string>V2.2.0 | Bluetooth patch, pair with AirportItlwm kext</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/IntelBluetoothFirmware</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>BlueToolFixup.kext</string>
+                    <key>Comment</key>
+                    <string>V2.6.6 | Bluetooth patch, pair with AirportItlwm kext</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/BlueToolFixup</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>IntelBTPatcher.kext</string>
+                    <key>Comment</key>
+                    <string>V2.2.0 | Bluetooth patch, pair with Lilu kext</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/IntelBTPatcher</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>RealtekCardReaderFriend.kext</string>
                     <key>Comment</key>
                     <string>V1.0.4 | Enable system recognition for Realtek card reader as a native one, pair with Lilu kext</string>
@@ -862,78 +926,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/BrightnessKeys</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>IntelBTPatcher.kext</string>
-                    <key>Comment</key>
-                    <string>V2.2.0 | Bluetooth patch, pair with Lilu kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IntelBTPatcher</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>AirportItlwm.kext</string>
-                    <key>Comment</key>
-                    <string>V2.2.0 | Enable Intel Wifi and Bluetooth</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AirportItlwm</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>IntelBluetoothFirmware.kext</string>
-                    <key>Comment</key>
-                    <string>V2.2.0 | Bluetooth patch, pair with AirportItlwm kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IntelBluetoothFirmware</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>BlueToolFixup.kext</string>
-                    <key>Comment</key>
-                    <string>V2.6.6 | Bluetooth patch, pair with AirportItlwm kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/BlueToolFixup</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -1191,8 +1183,10 @@
                 </dict>
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
-                    <key>#boot-args</key>
-                    <string>-noht40 -cdfon -igfxtypec -ecebeta</string>
+                    <key>bluetoothExternalDongleFailed</key>
+                    <data>AA==</data>
+                    <key>bluetoothInternalControllerInfo</key>
+                    <data>AAAAAAAAAAAAAAAAAAAAAA==</data>
                     <key>boot-args</key>
                     <string>-cdfon -igfxtypec -v</string>
                     <key>csr-active-config</key>
@@ -1232,37 +1226,6 @@
             <true/>
             <key>CustomMemory</key>
             <false/>
-            <key>DataHub</key>
-            <dict>
-                <key>ARTFrequency</key>
-                <integer>0</integer>
-                <key>BoardProduct</key>
-                <string></string>
-                <key>BoardRevision</key>
-                <data></data>
-                <key>DevicePathsSupported</key>
-                <integer>0</integer>
-                <key>FSBFrequency</key>
-                <integer>0</integer>
-                <key>InitialTSC</key>
-                <integer>0</integer>
-                <key>PlatformName</key>
-                <string></string>
-                <key>SmcBranch</key>
-                <data></data>
-                <key>SmcPlatform</key>
-                <data></data>
-                <key>SmcRevision</key>
-                <data></data>
-                <key>StartupPowerEvents</key>
-                <integer>0</integer>
-                <key>SystemProductName</key>
-                <string>MacBookPro14,2</string>
-                <key>SystemSerialNumber</key>
-                <string>C02VN0FYHV2N</string>
-                <key>SystemUUID</key>
-                <string>3615F2CE-D0E0-4A00-B3C6-39944A7C6B34</string>
-            </dict>
             <key>Generic</key>
             <dict>
                 <key>AdviseFeatures</key>
@@ -1285,80 +1248,6 @@
                 <string>C02VN0FYHV2N</string>
                 <key>SystemUUID</key>
                 <string>3615F2CE-D0E0-4A00-B3C6-39944A7C6B34</string>
-            </dict>
-            <key>PlatformNVRAM</key>
-            <dict>
-                <key>BID</key>
-                <string></string>
-                <key>FirmwareFeatures</key>
-                <data></data>
-                <key>FirmwareFeaturesMask</key>
-                <data></data>
-                <key>MLB</key>
-                <string>C02745404J9HRPC1M</string>
-                <key>ROM</key>
-                <data>LNeW2Xbu</data>
-                <key>SystemSerialNumber</key>
-                <string>C02VN0FYHV2N</string>
-                <key>SystemUUID</key>
-                <string>3615F2CE-D0E0-4A00-B3C6-39944A7C6B34</string>
-            </dict>
-            <key>SMBIOS</key>
-            <dict>
-                <key>BIOSReleaseDate</key>
-                <string></string>
-                <key>BIOSVendor</key>
-                <string></string>
-                <key>BIOSVersion</key>
-                <string></string>
-                <key>BoardAssetTag</key>
-                <string></string>
-                <key>BoardLocationInChassis</key>
-                <string></string>
-                <key>BoardManufacturer</key>
-                <string></string>
-                <key>BoardProduct</key>
-                <string></string>
-                <key>BoardSerialNumber</key>
-                <string></string>
-                <key>BoardType</key>
-                <integer>0</integer>
-                <key>BoardVersion</key>
-                <string></string>
-                <key>ChassisAssetTag</key>
-                <string></string>
-                <key>ChassisManufacturer</key>
-                <string></string>
-                <key>ChassisSerialNumber</key>
-                <string></string>
-                <key>ChassisType</key>
-                <integer>0</integer>
-                <key>ChassisVersion</key>
-                <string></string>
-                <key>FirmwareFeatures</key>
-                <data></data>
-                <key>FirmwareFeaturesMask</key>
-                <data></data>
-                <key>PlatformFeature</key>
-                <integer>0</integer>
-                <key>ProcessorType</key>
-                <integer>0</integer>
-                <key>SmcVersion</key>
-                <data></data>
-                <key>SystemFamily</key>
-                <string></string>
-                <key>SystemManufacturer</key>
-                <string></string>
-                <key>SystemProductName</key>
-                <string>MacBookPro14,2</string>
-                <key>SystemSKUNumber</key>
-                <string></string>
-                <key>SystemSerialNumber</key>
-                <string>C02VN0FYHV2N</string>
-                <key>SystemUUID</key>
-                <string>3615F2CE-D0E0-4A00-B3C6-39944A7C6B34</string>
-                <key>SystemVersion</key>
-                <string></string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
