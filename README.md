@@ -1,7 +1,7 @@
 # Lenovo Yoga 520-14IKB (80YM) Opencore Hackintosh 
 [![Code](https://img.shields.io/badge/download-release-blue.svg)](https://github.com/miltoncsjunior/HackintoshOCYoga520-14IKB.git)
 
-A guide for installing macOS Ventura 13.4 on Lenovo Yoga 520-14IKB using OpenCore 0.9.2 UEFI.
+A guide for installing macOS Ventura 13.4 on Lenovo Yoga 520-14IKB using OpenCore 0.9.3 UEFI.
 ![](Images/Laptop.png)
 
 
@@ -11,7 +11,7 @@ I'm not an expert in hackintoshing, this is my first Hackintosh, I managed to ge
 ## Laptop's Hardware 
 - <b>CPU</b>: [Intel i5 7200U](https://ark.intel.com/content/www/us/en/ark/products/95443/intel-core-i5-7200u-processor-3m-cache-up-to-3-10-ghz.html) Dual-Core CPU (Kaby Lake-U)
 - <b>GPU</b>: Intel HD 620 Graphics 
-- <b>Storage</b>: 500Gb NVME Kingston (Upgraded)
+- <b>Storage</b>: 500Gb NVME Kingston (Upgraded) + 1Tb HDD Western Digital
 - <b>RAM</b>: 8 GB DDR4 2133MHz
 - <b>Screen</b>: 13.9-inch Full HD (1366 x 768)
 - <b>Trackpad</b>: PS2 (I2C)
