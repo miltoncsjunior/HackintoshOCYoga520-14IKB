@@ -189,6 +189,36 @@
                     <key>BaseSkip</key>
                     <integer>0</integer>
                     <key>Comment</key>
+                    <string>Rename Method PTS to ZPTS</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>X1BUUwk=</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>WlBUUwk=</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data>RFNEVA==</data>
+                </dict>
+                <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
                     <string>Rename Method GPRW to XPRW</string>
                     <key>Count</key>
                     <integer>0</integer>
@@ -757,13 +787,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>RealtekCardReaderFriend.kext</string>
+                    <string>RealtekCardReader.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.4 | Enable system recognition for Realtek card reader as a native one, pair with Lilu kext</string>
+                    <string>V0.9.7 | Improves the SD Card experience and performance</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/RealtekCardReaderFriend</string>
+                    <string>Contents/MacOS/RealtekCardReader</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -775,13 +805,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>RealtekCardReader.kext</string>
+                    <string>RealtekCardReaderFriend.kext</string>
                     <key>Comment</key>
-                    <string>V0.9.7 | Improves the SD Card experience and performance</string>
+                    <string>V1.0.4 | Enable system recognition for Realtek card reader as a native one, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/RealtekCardReader</string>
+                    <string>Contents/MacOS/RealtekCardReaderFriend</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
