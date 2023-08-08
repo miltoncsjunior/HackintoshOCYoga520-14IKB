@@ -151,7 +151,7 @@
                     <key>TableLength</key>
                     <integer>0</integer>
                     <key>TableSignature</key>
-                    <data>RFNEVA==</data>
+                    <data>AAAAAA==</data>
                 </dict>
                 <dict>
                     <key>Base</key>
@@ -159,13 +159,13 @@
                     <key>BaseSkip</key>
                     <integer>0</integer>
                     <key>Comment</key>
-                    <string>Rename Method PTS to ZPTS</string>
+                    <string>Rename Method _PTS to ZPTS</string>
                     <key>Count</key>
                     <integer>0</integer>
                     <key>Enabled</key>
                     <true/>
                     <key>Find</key>
-                    <data>X1BUUwE=</data>
+                    <data>X1BUUw==</data>
                     <key>Limit</key>
                     <integer>0</integer>
                     <key>Mask</key>
@@ -173,7 +173,7 @@
                     <key>OemTableId</key>
                     <data></data>
                     <key>Replace</key>
-                    <data>WlBUUwE=</data>
+                    <data>WlBUUw==</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
@@ -181,37 +181,7 @@
                     <key>TableLength</key>
                     <integer>0</integer>
                     <key>TableSignature</key>
-                    <data>RFNEVA==</data>
-                </dict>
-                <dict>
-                    <key>Base</key>
-                    <string></string>
-                    <key>BaseSkip</key>
-                    <integer>0</integer>
-                    <key>Comment</key>
-                    <string>Rename Method PTS to ZPTS</string>
-                    <key>Count</key>
-                    <integer>0</integer>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Find</key>
-                    <data>X1BUUwk=</data>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data></data>
-                    <key>OemTableId</key>
-                    <data></data>
-                    <key>Replace</key>
-                    <data>WlBUUwk=</data>
-                    <key>ReplaceMask</key>
-                    <data></data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                    <key>TableLength</key>
-                    <integer>0</integer>
-                    <key>TableSignature</key>
-                    <data>RFNEVA==</data>
+                    <data>AAAAAA==</data>
                 </dict>
                 <dict>
                     <key>Base</key>
@@ -225,7 +195,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Find</key>
-                    <data>R1BSVwI=</data>
+                    <data>R1BSVw==</data>
                     <key>Limit</key>
                     <integer>0</integer>
                     <key>Mask</key>
@@ -233,7 +203,7 @@
                     <key>OemTableId</key>
                     <data></data>
                     <key>Replace</key>
-                    <data>WFBSVwI=</data>
+                    <data>WFBSVw==</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
@@ -241,7 +211,7 @@
                     <key>TableLength</key>
                     <integer>0</integer>
                     <key>TableSignature</key>
-                    <data>RFNEVA==</data>
+                    <data>AAAAAA==</data>
                 </dict>
                 <dict>
                     <key>Base</key>
@@ -271,7 +241,7 @@
                     <key>TableLength</key>
                     <integer>0</integer>
                     <key>TableSignature</key>
-                    <data>RFNEVA==</data>
+                    <data>AAAAAA==</data>
                 </dict>
                 <dict>
                     <key>Base</key>
@@ -281,11 +251,11 @@
                     <key>Comment</key>
                     <string>Rename Method _DSM to XDSM</string>
                     <key>Count</key>
-                    <integer>1</integer>
+                    <integer>0</integer>
                     <key>Enabled</key>
                     <true/>
                     <key>Find</key>
-                    <data>FDlfRFNNDA==</data>
+                    <data>FF9EU00M</data>
                     <key>Limit</key>
                     <integer>0</integer>
                     <key>Mask</key>
@@ -293,31 +263,31 @@
                     <key>OemTableId</key>
                     <data></data>
                     <key>Replace</key>
-                    <data>FDlYRFNNDA==</data>
+                    <data>FFhEU00M</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
-                    <integer>1</integer>
+                    <integer>0</integer>
                     <key>TableLength</key>
                     <integer>0</integer>
                     <key>TableSignature</key>
-                    <data>RFNEVA==</data>
+                    <data>AAAAAA==</data>
                 </dict>
             </array>
             <key>Quirks</key>
             <dict>
                 <key>FadtEnableReset</key>
-                <true/>
+                <false/>
                 <key>NormalizeHeaders</key>
                 <false/>
                 <key>RebaseRegions</key>
                 <false/>
                 <key>ResetHwSig</key>
-                <true/>
+                <false/>
                 <key>ResetLogoStatus</key>
                 <false/>
                 <key>SyncTableIds</key>
-                <true/>
+                <false/>
             </dict>
         </dict>
         <key>Booter</key>
@@ -429,7 +399,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.6 | Patch engine</string>
+                    <string>V1.6.7 | Patch engine</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -463,24 +433,6 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>YogaSMC.kext</string>
-                    <key>Comment</key>
-                    <string>V1.5.1 | Lenovo SMC keys, pair with VirtualSMC kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/YogaSMC</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
                     <string>ECEnabler.kext</string>
                     <key>Comment</key>
                     <string>V1.0.4 | Allow macOS to read any size of EC field, pair with Lilu kext</string>
@@ -501,7 +453,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.5 | Graphics patches, pair with Lilu kext</string>
+                    <string>V1.6.6 | Graphics patches, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -537,7 +489,7 @@
                     <key>BundlePath</key>
                     <string>NVMeFix.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.0 | NVME patches, pair with Lilu kext</string>
+                    <string>V1.1.1 | NVME patches, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -555,7 +507,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.8.3 | Audio patches, pair with Lilu kext</string>
+                    <string>V1.8.4 | Audio patches, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -697,6 +649,24 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>YogaSMC.kext</string>
+                    <key>Comment</key>
+                    <string>V1.5.1 | Lenovo SMC keys, pair with VirtualSMC kext</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/YogaSMC</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>USBMap.kext</string>
                     <key>Comment</key>
                     <string>V1.0 | USB Mapper Ports</string>
@@ -735,7 +705,7 @@
                     <key>BundlePath</key>
                     <string>IntelBTPatcher.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | Bluetooth patch, pair with Lilu kext</string>
+                    <string>V2.3.0 | Bluetooth patch, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -753,7 +723,7 @@
                     <key>BundlePath</key>
                     <string>IntelBluetoothFirmware.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | Bluetooth patch, pair with AirportItlwm kext</string>
+                    <string>V2.3.0 | Bluetooth patch, pair with AirportItlwm kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -771,7 +741,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.7 | Bluetooth patch, pair with AirportItlwm kext</string>
+                    <string>V2.6.8 | Bluetooth patch, pair with AirportItlwm kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -825,11 +795,29 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.5 | Enable PS2 Keyboard</string>
+                    <string>V2.3.5 | Enable PS2 Keyboard &amp; Mouse</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/VoodooPS2Controller</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext</string>
+                    <key>Comment</key>
+                    <string>V1.1.4 | Enable HID trackpad using GPIO mode</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/VoodooInput</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -859,13 +847,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext</string>
+                    <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.4 | Enable HID trackpad using GPIO mode</string>
+                    <string>V2.3.5 | Enable PS2 Mouse</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooInput</string>
+                    <string>Contents/MacOS/VoodooPS2Mouse</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -1089,6 +1077,8 @@
                 <true/>
                 <key>HideAuxiliary</key>
                 <false/>
+                <key>InstanceIdentifier</key>
+                <string></string>
                 <key>LauncherOption</key>
                 <string>Short</string>
                 <key>LauncherPath</key>
@@ -1104,7 +1094,7 @@
                 <key>PollAppleHotKeys</key>
                 <true/>
                 <key>ShowPicker</key>
-                <false/>
+                <true/>
                 <key>TakeoffDelay</key>
                 <integer>0</integer>
                 <key>Timeout</key>
@@ -1195,7 +1185,30 @@
                 <false/>
             </dict>
             <key>Tools</key>
-            <array/>
+            <array>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Auxiliary</key>
+                    <true/>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Flavour</key>
+                    <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <true/>
+                    <key>Name</key>
+                    <string>OpenShell</string>
+                    <key>Path</key>
+                    <string>OpenShell.efi</string>
+                    <key>RealPath</key>
+                    <true/>
+                    <key>TextMode</key>
+                    <true/>
+                </dict>
+            </array>
         </dict>
         <key>NVRAM</key>
         <dict>
@@ -1214,7 +1227,7 @@
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
                     <key>boot-args</key>
-                    <string>-cdfon -igfxtypec</string>
+                    <string>-v -cdfon -igfxtypec</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
@@ -1261,7 +1274,7 @@
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
-                <integer>0</integer>
+                <integer>1541</integer>
                 <key>ROM</key>
                 <data>LNeW2Xbu</data>
                 <key>SpoofVendor</key>
