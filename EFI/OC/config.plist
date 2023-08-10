@@ -1227,7 +1227,7 @@
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
                     <key>boot-args</key>
-                    <string>-v -cdfon -igfxtypec</string>
+                    <string>-cdfon -igfxtypec -v</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
@@ -1496,7 +1496,7 @@
             <key>ProtocolOverrides</key>
             <dict>
                 <key>AppleAudio</key>
-                <true/>
+                <false/>
                 <key>AppleBootPolicy</key>
                 <false/>
                 <key>AppleDebugLog</key>
@@ -1526,7 +1526,7 @@
                 <key>FirmwareVolume</key>
                 <true/>
                 <key>HashServices</key>
-                <false/>
+                <true/>
                 <key>OSInfo</key>
                 <false/>
                 <key>PciIo</key>
