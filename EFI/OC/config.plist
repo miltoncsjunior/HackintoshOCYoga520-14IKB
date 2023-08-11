@@ -523,6 +523,24 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>RTCMemoryFixup.kext</string>
+                    <key>Comment</key>
+                    <string>V1.0.7 | Fix conflicts between macOS AppleRTC and firmware/BIOS</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/RTCMemoryFixup</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>CpuTscSync.kext</string>
                     <key>Comment</key>
                     <string>V1.1.0 | Disable xcpm_urgency, pair with Lilu kext</string>
@@ -1144,7 +1162,7 @@
                 <key>PasswordSalt</key>
                 <data></data>
                 <key>ScanPolicy</key>
-                <integer>0</integer>
+                <integer>2687747</integer>
                 <key>SecureBootModel</key>
                 <string>Default</string>
                 <key>Vault</key>
@@ -1530,7 +1548,7 @@
                 <key>OSInfo</key>
                 <false/>
                 <key>PciIo</key>
-                <false/>
+                <true/>
                 <key>UnicodeCollation</key>
                 <false/>
             </dict>
