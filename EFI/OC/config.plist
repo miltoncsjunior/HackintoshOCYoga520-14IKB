@@ -8,6 +8,22 @@
             <array>
                 <dict>
                     <key>Comment</key>
+                    <string>Add counterfeit Embedded Controller (EC) device, pair with YogaSMC kext</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-ECRW.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string>Add counterfeit Embedded Controller (EC) device, pair with YogaSMC kext</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-RCSM.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
                     <string>Add PNLF device, pair with WhateverGreen and Lilu kexts</string>
                     <key>Enabled</key>
                     <true/>
@@ -37,6 +53,14 @@
                     <true/>
                     <key>Path</key>
                     <string>SSDT-PTS.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string>Keyboard complete patches, pair with VoodooPS2Controller and VoodooPS2Keyboard kexts</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-PS2MAP.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -102,27 +126,41 @@
                     <key>Path</key>
                     <string>SSDT-MEM2.aml</string>
                 </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string>Add counterfeit Embedded Controller (EC) device, pair with YogaSMC kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-ECRW.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string>Keyboard complete patches, pair with VoodooPS2Controller and VoodooPS2Keyboard kexts</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-PS2MAP.aml</string>
-                </dict>
             </array>
             <key>Delete</key>
             <array/>
             <key>Patch</key>
             <array>
+                <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>Rename Method EC0 to EC</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>RUMwXw==</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>RUNfXw==</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data>AAAAAA==</data>
+                </dict>
                 <dict>
                     <key>Base</key>
                     <string></string>
@@ -219,36 +257,6 @@
                     <key>BaseSkip</key>
                     <integer>0</integer>
                     <key>Comment</key>
-                    <string>Rename Method EC0 to EC</string>
-                    <key>Count</key>
-                    <integer>0</integer>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Find</key>
-                    <data>RUMwXw==</data>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data></data>
-                    <key>OemTableId</key>
-                    <data></data>
-                    <key>Replace</key>
-                    <data>RUNfXw==</data>
-                    <key>ReplaceMask</key>
-                    <data></data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                    <key>TableLength</key>
-                    <integer>0</integer>
-                    <key>TableSignature</key>
-                    <data>AAAAAA==</data>
-                </dict>
-                <dict>
-                    <key>Base</key>
-                    <string></string>
-                    <key>BaseSkip</key>
-                    <integer>0</integer>
-                    <key>Comment</key>
                     <string>Rename Method _DSM to XDSM</string>
                     <key>Count</key>
                     <integer>0</integer>
@@ -314,6 +322,8 @@
                 <false/>
                 <key>EnableWriteUnprotector</key>
                 <true/>
+                <key>FixupAppleEfiImages</key>
+                <false/>
                 <key>ForceBooterSignature</key>
                 <false/>
                 <key>ForceExitBootServices</key>
@@ -357,7 +367,7 @@
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
                     <key>AAPL,ig-platform-id</key>
-                    <data>AAAbWQ==</data>
+                    <data>AAAWWQ==</data>
                     <key>backlight-smoother-interval</key>
                     <data>BwAAAA==</data>
                     <key>backlight-smoother-steps</key>
@@ -422,186 +432,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/VirtualSMC</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>WhateverGreen.kext</string>
-                    <key>Comment</key>
-                    <string>V1.6.6 | Graphics patches, pair with Lilu kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/WhateverGreen</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>ECEnabler.kext</string>
-                    <key>Comment</key>
-                    <string>V1.0.4 | Allow macOS to read any size of EC field, pair with Lilu kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/ECEnabler</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>CryptexFixup.kext</string>
-                    <key>Comment</key>
-                    <string>V1.0.2 | Required in macOS Ventura, pair with Lilu kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/CryptexFixup</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>NVMeFix.kext</string>
-                    <key>Comment</key>
-                    <string>V1.1.1 | NVME patches, pair with Lilu kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/NVMeFix</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>AppleALC.kext</string>
-                    <key>Comment</key>
-                    <string>V1.8.5 | Audio patches, pair with Lilu kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AppleALC</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>RTCMemoryFixup.kext</string>
-                    <key>Comment</key>
-                    <string>V1.0.7 | Fix conflicts between macOS AppleRTC and firmware/BIOS</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/RTCMemoryFixup</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>CpuTscSync.kext</string>
-                    <key>Comment</key>
-                    <string>V1.1.0 | Disable xcpm_urgency, pair with Lilu kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/CpuTscSync</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>HibernationFixup.kext</string>
-                    <key>Comment</key>
-                    <string>V1.4.9 | Fix hibernation Syncing RTC variables and NVRAM, pair with Lilu kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/HibernationFixup</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>FeatureUnlock.kext</string>
-                    <key>Comment</key>
-                    <string>V1.1.5 | Unlock features in Ventura fix Air Play, pair with Lilu kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/FeatureUnlock</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>RestrictEvents.kext</string>
-                    <key>Comment</key>
-                    <string>V1.1.2 | Block unwanted processes</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/RestrictEvents</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -685,13 +515,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>USBMap.kext</string>
+                    <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.0 | USB Mapper Ports</string>
+                    <string>V1.6.6 | Graphics patches, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string></string>
+                    <string>Contents/MacOS/WhateverGreen</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -703,13 +533,175 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>AirportItlwm.kext</string>
+                    <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.0 | Enable Intel Wifi and Bluetooth</string>
+                    <string>V1.8.7 | Audio patches, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AirportItlwm</string>
+                    <string>Contents/MacOS/AppleALC</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>ECEnabler.kext</string>
+                    <key>Comment</key>
+                    <string>V1.0.4 | Allow macOS to read any size of EC field, pair with Lilu kext</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/ECEnabler</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>VoodooPS2Controller.kext</string>
+                    <key>Comment</key>
+                    <string>V2.3.5 | Enable PS2 Keyboard &amp; Mouse</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/VoodooPS2Controller</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
+                    <key>Comment</key>
+                    <string>V2.3.5 | Enable PS2 Keyboard</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/VoodooPS2Keyboard</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>BrightnessKeys.kext</string>
+                    <key>Comment</key>
+                    <string>V1.0.3 | Keyboard Brightness</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/BrightnessKeys</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext</string>
+                    <key>Comment</key>
+                    <string>V1.1.4 | Enable HID trackpad using GPIO mode</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/VoodooInput</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
+                    <key>Comment</key>
+                    <string>V1 | Enable HID trackpad using GPIO mode</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/VoodooI2CServices</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext</string>
+                    <key>Comment</key>
+                    <string>V1.1 | Enable HID trackpad using GPIO mode</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/VoodooGPIO</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>VoodooI2C.kext</string>
+                    <key>Comment</key>
+                    <string>V2.8 | Enable HID trackpad using GPIO mode</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/VoodooI2C</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>VoodooI2CHID.kext</string>
+                    <key>Comment</key>
+                    <string>V1 | Enable HID trackpad using GPIO mode</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/VoodooI2CHID</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -775,6 +767,24 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>AirportItlwm.kext</string>
+                    <key>Comment</key>
+                    <string>V2.3.0 | Enable Intel Wifi and Bluetooth</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AirportItlwm</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>RealtekCardReader.kext</string>
                     <key>Comment</key>
                     <string>V0.9.7 | Improves the SD Card experience and performance</string>
@@ -811,13 +821,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext</string>
+                    <string>USBMap.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.4 | Enable HID trackpad using GPIO mode</string>
+                    <string>V1.0 | USB Mapper Ports</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooInput</string>
+                    <string></string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -829,13 +839,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext</string>
+                    <string>RTCMemoryFixup.kext</string>
                     <key>Comment</key>
-                    <string>V1.1 | Enable HID trackpad using GPIO mode</string>
+                    <string>V1.0.7 | Fix conflicts between macOS AppleRTC and firmware/BIOS</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooGPIO</string>
+                    <string>Contents/MacOS/RTCMemoryFixup</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -847,13 +857,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
+                    <string>CpuTscSync.kext</string>
                     <key>Comment</key>
-                    <string>V1 | Enable HID trackpad using GPIO mode</string>
+                    <string>V1.1.0 | Disable xcpm_urgency, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooI2CServices</string>
+                    <string>Contents/MacOS/CpuTscSync</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -865,13 +875,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>VoodooI2C.kext</string>
+                    <string>HibernationFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.8 | Enable HID trackpad using GPIO mode</string>
+                    <string>V1.4.9 | Fix hibernation Syncing RTC variables and NVRAM, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooI2C</string>
+                    <string>Contents/MacOS/HibernationFixup</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -883,13 +893,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>VoodooI2CHID.kext</string>
+                    <string>CryptexFixup.kext</string>
                     <key>Comment</key>
-                    <string>V1 | Enable HID trackpad using GPIO mode</string>
+                    <string>V1.0.2 | Required in macOS Ventura, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooI2CHID</string>
+                    <string>Contents/MacOS/CryptexFixup</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -901,13 +911,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>VoodooPS2Controller.kext</string>
+                    <string>NVMeFix.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.5 | Enable PS2 Keyboard &amp; Mouse</string>
+                    <string>V1.1.1 | NVME patches, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooPS2Controller</string>
+                    <string>Contents/MacOS/NVMeFix</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -919,13 +929,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
+                    <string>FeatureUnlock.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.5 | Enable PS2 Keyboard</string>
+                    <string>V1.1.5 | Unlock features in Ventura fix Air Play, pair with Lilu kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooPS2Keyboard</string>
+                    <string>Contents/MacOS/FeatureUnlock</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -937,31 +947,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
+                    <string>RestrictEvents.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.5 | Enable PS2 Mouse</string>
+                    <string>V1.1.3 | Block unwanted processes</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooPS2Mouse</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>BrightnessKeys.kext</string>
-                    <key>Comment</key>
-                    <string>V1.0.3 | Keyboard Brightness</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/BrightnessKeys</string>
+                    <string>Contents/MacOS/RestrictEvents</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -1112,7 +1104,7 @@
                 <key>PollAppleHotKeys</key>
                 <true/>
                 <key>ShowPicker</key>
-                <false/>
+                <true/>
                 <key>TakeoffDelay</key>
                 <integer>0</integer>
                 <key>Timeout</key>
@@ -1245,7 +1237,7 @@
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
                     <key>boot-args</key>
-                    <string>-cdfon -igfxtypec itlwm_cc=BR</string>
+                    <string>-cdfon -igfxtypec itlwm_cc=BR -v</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
@@ -1288,7 +1280,7 @@
                 <key>AdviseFeatures</key>
                 <true/>
                 <key>MLB</key>
-                <string>C02745404J9HRPC1M</string>
+                <string>C02814101CDHWVPCB</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
@@ -1300,11 +1292,11 @@
                 <key>SystemMemoryStatus</key>
                 <string>Auto</string>
                 <key>SystemProductName</key>
-                <string>MacBookPro14,2</string>
+                <string>MacBookPro14,1</string>
                 <key>SystemSerialNumber</key>
-                <string>C02VN0FYHV2N</string>
+                <string>C02WJLZPHV29</string>
                 <key>SystemUUID</key>
-                <string>3615F2CE-D0E0-4A00-B3C6-39944A7C6B34</string>
+                <string>D86EC160-5C8F-4E30-9438-AE404FF44230</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -1507,7 +1499,7 @@
                 <key>TextRenderer</key>
                 <string>BuiltinGraphics</string>
                 <key>UIScale</key>
-                <integer>-1</integer>
+                <integer>0</integer>
                 <key>UgaPassThrough</key>
                 <false/>
             </dict>
@@ -1534,7 +1526,7 @@
                 <key>AppleSecureBoot</key>
                 <false/>
                 <key>AppleSmcIo</key>
-                <false/>
+                <true/>
                 <key>AppleUserInterfaceTheme</key>
                 <false/>
                 <key>DataHub</key>
@@ -1550,7 +1542,7 @@
                 <key>PciIo</key>
                 <true/>
                 <key>UnicodeCollation</key>
-                <false/>
+                <true/>
             </dict>
             <key>Quirks</key>
             <dict>
