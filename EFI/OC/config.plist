@@ -1404,11 +1404,11 @@
                 <key>PollAppleHotKeys</key>
                 <true/>
                 <key>ShowPicker</key>
-                <false/>
+                <true/>
                 <key>TakeoffDelay</key>
                 <integer>0</integer>
                 <key>Timeout</key>
-                <integer>3</integer>
+                <integer>5</integer>
             </dict>
             <key>Debug</key>
             <dict>
@@ -1537,7 +1537,7 @@
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
                     <key>boot-args</key>
-                    <string>itlwm_cc=BR -noht40 -cdfon -igfxtypec</string>
+                    <string>itlwm_cc=BR -noht40 -cdfon -igfxtypec -v</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
