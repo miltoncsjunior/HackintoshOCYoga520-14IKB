@@ -1,7 +1,7 @@
 # Lenovo Yoga 520-14IKB (80YM) Opencore Hackintosh 
 [![Code](https://img.shields.io/badge/download-release-blue.svg)](https://github.com/miltoncsjunior/HackintoshOCYoga520-14IKB.git)
 
-A guide for installing macOS Ventura 13.6.1 on Lenovo Yoga 520-14IKB using OpenCore 0.9.6 UEFI.
+A guide for installing macOS Ventura 13.6.3 on Lenovo Yoga 520-14IKB using OpenCore 0.9.7 UEFI.
 ![](Images/Laptop.png)
 
 
@@ -42,6 +42,7 @@ This laptop is a reasonably spec laptop, I use it for development but I don't re
 
 ## What's Not Working?
 - Apple Pay with TouchID, to confirm any purchases you need to type your password instead of using TouchID, more information [here](https://discussions.apple.com/thread/7808558)
+- Wi-Fi in networks with mesh routers (only using Airportitlwm.kext, with itlwm.kext work)
 
 ## Bugs
 - DRM support (iTunes Movies, Apple TV+, Amazon Prime and Netflix, and others) could be fixed in the future, more information [here](https://github.com/acidanthera/bugtracker/issues/586) and [here](https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/#DRM).
