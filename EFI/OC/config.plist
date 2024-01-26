@@ -32,6 +32,14 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
+                    <string>Complements the PPMC (Platform Power Management Controller)</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-PMCR.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
                     <string>Override for host defined _OSI to handle "Darwin"</string>
                     <key>Enabled</key>
                     <true/>
@@ -69,14 +77,6 @@
                     <true/>
                     <key>Path</key>
                     <string>SSDT-I2C.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string>Complements the PPMC (Platform Power Management Controller)</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-PMCR.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -212,6 +212,36 @@
                     <data></data>
                     <key>Replace</key>
                     <data>JVhDUlM=</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data></data>
+                </dict>
+                <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>Rename XHC1 to SHCI</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>WEhDMQ==</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>U0hDSQ==</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
@@ -495,17 +525,17 @@
             <key>Quirks</key>
             <dict>
                 <key>FadtEnableReset</key>
-                <false/>
+                <true/>
                 <key>NormalizeHeaders</key>
-                <false/>
+                <true/>
                 <key>RebaseRegions</key>
-                <false/>
+                <true/>
                 <key>ResetHwSig</key>
-                <false/>
+                <true/>
                 <key>ResetLogoStatus</key>
-                <false/>
+                <true/>
                 <key>SyncTableIds</key>
-                <false/>
+                <true/>
             </dict>
         </dict>
         <key>Booter</key>
@@ -1619,11 +1649,11 @@
                 <key>AdviseFeatures</key>
                 <true/>
                 <key>MLB</key>
-                <string>C02814101CDHWVPCB</string>
+                <string>C02732306CDHRPCCB</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
-                <integer>1541</integer>
+                <integer>0</integer>
                 <key>ROM</key>
                 <data>LNeW2Xbu</data>
                 <key>SpoofVendor</key>
@@ -1631,11 +1661,11 @@
                 <key>SystemMemoryStatus</key>
                 <string>Auto</string>
                 <key>SystemProductName</key>
-                <string>MacBookPro14,1</string>
+                <string>MacBookPro14,2</string>
                 <key>SystemSerialNumber</key>
-                <string>C02WJLZPHV29</string>
+                <string>C02V6059HV2N</string>
                 <key>SystemUUID</key>
-                <string>D86EC160-5C8F-4E30-9438-AE404FF44230</string>
+                <string>057DEFF4-EB2C-41F7-911A-F48856C8162B</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
