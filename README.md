@@ -1,7 +1,7 @@
 # Lenovo Yoga 520-14IKB (80YM) Opencore Hackintosh 
 [![Code](https://img.shields.io/badge/download-release-blue.svg)](https://github.com/miltoncsjunior/HackintoshOCYoga520-14IKB.git)
 
-A guide for installing macOS Ventura 13.6.7 on Lenovo Yoga 520-14IKB using OpenCore 1.0.0 UEFI.
+A guide for installing macOS Ventura 13.7.2 on Lenovo Yoga 520-14IKB using OpenCore 1.0.3 UEFI.
 ![](Images/Laptop.png)
 
 
@@ -11,13 +11,12 @@ I'm not an expert in hackintoshing, this is my first Hackintosh, I managed to ge
 ## Laptop's Hardware 
 - <b>CPU</b>: [Intel i5 7200U](https://ark.intel.com/content/www/us/en/ark/products/95443/intel-core-i5-7200u-processor-3m-cache-up-to-3-10-ghz.html) Dual-Core CPU (Kaby Lake-U)
 - <b>GPU</b>: Intel HD 620 Graphics 
-- <b>Storage</b>: 500Gb NVME Kingston (Upgraded) + 1Tb HDD Western Digital
+- <b>Storage</b>: 500Gb NVME Kingston (Upgraded)
 - <b>RAM</b>: 8 GB DDR4 2133MHz
 - <b>Screen</b>: 13.9-inch Full HD (1366 x 768)
 - <b>Trackpad</b>: PS2 (I2C)
 - <b>Wi-Fi</b>: Intel AC3150 Dual Band
 - <b>Ports</b>: 1 x USB-C, 2 x USB 3.0, USB 2.0 SD Card Reader, HDMI Display Port
-- <b>Ethernet</b> Dongle USB RD9700
 
 ## Overview 
 This laptop is a reasonably spec laptop, I use it for development but I don't recommend it for gaming or video editing, the battery life is max 3 hours, it's good.
