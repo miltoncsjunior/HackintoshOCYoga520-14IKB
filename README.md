@@ -63,6 +63,10 @@ For a complete guide on how to create an installation disk on USB stick follow t
 After create disk, mount the EFI partition in your USB, Copy-and-paste the folder `EFI` from this release's repository and generate MacBookPro14.2 SMBIOS (which is the closest one to this laptop's hardware) and change it, copy to config.plist, reboot your laptop and press `F12` to enter `BIOS Menu`, choose your USB installer and select boot from the USB that shown, it may take some time to boot, after is done, you should see `macOS Utilities`, choose `Disk Utility` and erase the drive you want to install macOS on it, click on `Erase` and type the name that you want, like: "Mac OS", choose the format as `APFS` and `Scheme` as `GUID Partition Map` and click `Erase`, after it's done, close the window and go back to `macOS Utilities` and choose `Install macOS`, click `Agree` to accept the license agreement, the installation should starts now, your laptop should restarts several times, after it's done, login to your AppleID (for more specific guide please go [here](https://dortania.github.io/oc-laptop-guide/)), after setting up your laptop, unzip the folder.
 If you have problems with sleep please go [here](https://dortania.github.io/oc-laptop-guide/battery-power-management/correcting-sleep-problems.html).
 Restart, and you're ready to go!
+After installation disable IPv6 Wifi using command:
+```bash
+	sudo networksetup -setv6off Wi-Fi
+```
 
 ## Extras (above Ventura)
 - After you finish the installation you'll notice that your iMessage and other Apple services aren't working properly, to fix that issue you have to add `ROM`, `MLB` and a proper SMBIOS (which is MacBookPro14.2 for this device) in your `config.plist`, for more information follow this guide from [here](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#fixing-imessage-and-other-services-with-opencore).
