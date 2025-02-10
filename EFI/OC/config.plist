@@ -2049,6 +2049,10 @@
                 </dict>
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
+                    <key>bluetoothExternalDongleFailed</key>
+                    <data>AA==</data>
+                    <key>bluetoothInternalControllerInfo</key>
+                    <data>AAAAAAAAAAAAAAAAAAA=</data>
                     <key>boot-args</key>
                     <string>-v -cdfon -igfxtypec ipc_control_port_options=0 -noht40 -novht</string>
                     <key>csr-active-config</key>
@@ -2076,6 +2080,8 @@
                 </array>
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <array>
+                    <string>bluetoothExternalDongleFailed</string>
+                    <string>bluetoothInternalControllerInfo</string>
                     <string>boot-args</string>
                     <string>csr-active-config</string>
                 </array>
